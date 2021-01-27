@@ -2,7 +2,7 @@
 @import './mq.scss';
 $titleMovil:22px;
 $sizeIcoMovil:40px;
-$subTitleMovil:16px;
+$subTitleMovil:14px;
 $paddingTopMovil:40px;
 body{
   padding:0;
@@ -10,6 +10,9 @@ body{
   background: #eeeeee;
 }
 .ficha-2021-samsung{
+  hr{
+    max-width:90%;
+  }
   .mgt-1{
     margin-top:50px !important;
   }
@@ -104,6 +107,7 @@ body{
     padding:70px 0 131px 0 !important;
     @include respond-to($iphone_xs) {
       margin-top:$paddingTopMovil;
+      padding:0 0 30px 0 !important;
     }
     p{
       font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -191,7 +195,7 @@ body{
     display:block;
     margin:0 auto;
     @include respond-to($iphone_xs) {
-      padding:0 0 50px 0;
+      padding:0;
     }
     .banner{
       position: relative;
@@ -286,8 +290,14 @@ body{
   }
   .banner-1-c{
     margin-top:50px !important;
+    background: transparent !important;
     h1{
       color:#010101 !important;
+    }
+    .body{
+      @include respond-to($iphone_xs) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -365,9 +375,14 @@ body{
       .right{
         margin-top:80px;
         h5{
-          font-family: 'SamsungSharp Bold';
-          font-size:30px !important;
-          color:#8c8c8c;
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #384753;
           margin:20% 0 0 0;
           text-align: center;
         }
@@ -375,7 +390,16 @@ body{
           font-family: 'SamsungSharp Bold' !important;
         }
         h3{
+          font-family: 'Lato', sans-serif;
           text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #384753;
+
         }
       }
       .box-informations{
@@ -418,7 +442,7 @@ body{
         height: 55px;
         background: #333333 !important;
         border-radius:5px !important;
-        margin:20px auto 0 auto;
+        margin:78Px auto 0 auto;
         @include respond-to($iphone_xs) {
           max-width:90%;
           height: 35px;
@@ -657,6 +681,7 @@ body{
 
   .banner-4{
     background: #ffffff;
+    width:90%;
     max-width:1240px;
     margin:0 auto;
     .thumbnails{
@@ -670,12 +695,13 @@ body{
         grid-template-columns: 100%;
         justify-content: center;
         margin-top:0px;
+        padding-top:50px;
         padding-bottom:50px;
       }
       .thumb{
         .title-thumb{
-          font-family: 'SamsungSharp Bold';
-          font-size: 36px;
+          font-family: 'Lato', sans-serif;
+          font-size: 31px;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
@@ -689,25 +715,31 @@ body{
           width:100%;
         }
         p{
-          font-family: 'SamsungOne 800';
-          font-size: 24px;
-          font-weight: 800;
+          font-family: 'Lato', sans-serif;
+          font-size: 20.5px;
+          font-weight: normal;
           font-stretch: normal;
           font-style: normal;
           line-height: normal;
           letter-spacing: normal;
-          text-align: center;
+          text-align: left;
           color: #000000;
+
           @include respond-to($iphone_xs) {
            font-size: $subTitleMovil;
           }
         }
         .list-colors{
           h6{
-            font-family: 'SamsungOne 800';
-            font-size:24px;
-            margin:0;
-            color:#c2c9d5;
+            font-family: 'Lato', sans-serif;
+            font-size: 20.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #8c8c8c;
             margin:30px 0 30px 0;
           }
           ul{
@@ -729,9 +761,9 @@ body{
                 }
               }
               p{
-                font-family: 'SamsungOne 600';
-                font-size: 24px;
-                font-weight: 600;
+                font-family: Lato;
+                font-size: 20.5px;
+                font-weight: normal;
                 font-stretch: normal;
                 font-style: normal;
                 line-height: normal;
@@ -767,23 +799,27 @@ body{
       margin:0 auto;
       padding:0;
       max-width:90%;
+      font-family: 'Lato', sans-serif;
     }
     h2{
-      font-family: 'SamsungSharp Bold';
-      font-size: 48px;
+      // font-family: 'SamsungSharp Bold';
+      font-size: 41px;
+      font-weight: bold;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
       letter-spacing: normal;
       text-align: left;
       color: #000000;
+
       @include respond-to($iphone_xs) {
         font-size: 24px;
       }
     }
     p{
-      font-family: 'SamsungOne 400';
-      font-size: 30px;
+      // font-family: 'SamsungOne 400';
+      font-family: 'Lato', sans-serif;
+      font-size: 25.5px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -791,12 +827,19 @@ body{
       letter-spacing: normal;
       text-align: left;
       color: #000000;
+      margin-top:25px;
+
       @include respond-to($iphone_xs) {
         font-size: 18px;
       }
     }
   }
   .body{
+    @include respond-to($iphone_xs) {
+      width:80%;
+      display:block;
+      margin:0 auto 0 auto;
+    }
     ul{
       display: grid;
       grid-template-columns: 340px 340px 340px;
@@ -831,10 +874,10 @@ body{
       h3,h4,h5{
         margin:0;
         padding:0;
+        font-family: 'Lato', sans-serif;
       }
       h3{
-        font-family: 'SamsungSharp Bold';
-        font-size: 60px;
+        font-size: 51.5px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -848,45 +891,47 @@ body{
         }
       }
       h4{
-        font-family: 'SamsungOne 800';
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 25.5px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
         color: #000000;
+
         @include respond-to($iphone_xs) {
           font-size: 20px;
         }
       }
       h5{
-        font-family: 'SamsungOne 800';
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 25.5px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
         color: #8c8c8c;
-        margin:32px 0 21px 0;
+        margin:28px 0 18px 0;
+
         @include respond-to($iphone_xs) {
           font-size: 20px;
           margin:15px 0 10px 0;
         }
       }
       p{
-        font-family: 'SamsungOne 600';
-        font-size: 30px;
-        font-weight: 600;
+        // font-family: 'SamsungOne 600';
+        font-family: 'Lato', sans-serif;
+        font-size: 25.5px;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
         color: #000000;
+        margin:0;
         @include respond-to($iphone_xs) {
           font-size: 20px;
         }
@@ -901,10 +946,10 @@ body{
       h3,h4{
         margin:0;
         padding:0;
+        font-family: 'Lato', sans-serif;
       }
       h3{
-        font-family: 'SamsungSharp Bold';
-        font-size: 60px;
+        font-size: 51.5px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -912,20 +957,21 @@ body{
         letter-spacing: normal;
         text-align: center;
         color: #000000;
+        
         @include respond-to($iphone_xs) {
           font-size: 40px;
         }
       }
       h4{
-        font-family: 'SamsungOne 800';
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 25.5px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
         color: #8c8c8c;
+
         @include respond-to($iphone_xs) {
           font-size: 20px;
         }
@@ -947,22 +993,23 @@ body{
       }
       
       h3{
-        font-family: 'SamsungOne 800';
-        font-size: 30px;
-        font-weight: 800;
+        font-family: 'Lato', sans-serif;
+        font-size: 25.5px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
         color: #010101;
+
         @include respond-to($iphone_xs) {
           font-size: 20px;
         }
       }
       h4{
-        font-family: 'SamsungSharp Bold';
-        font-size: 60px;
+        font-family: 'Lato', sans-serif;
+        font-size: 51.5px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -970,6 +1017,7 @@ body{
         letter-spacing: normal;
         text-align: center;
         color: #000000;
+
         @include respond-to($iphone_xs) {
           font-size: 40px;
         }
@@ -995,16 +1043,25 @@ body{
         }
       }
       h3{
-        font-size: 60px;
+        font-family: 'Lato', sans-serif;
+        font-size: 51.5px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
         margin:0;
         @include respond-to($iphone_xs) {
           font-size: 40px;
         }
       }
       h5{
-        font-family: 'SamsungOne 800';
-        font-size: 30px;
-        font-weight: 800;
+        // font-family: 'SamsungOne 800';
+        font-family: 'Lato', sans-serif;
+        font-size: 25.5px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
@@ -1029,7 +1086,8 @@ body{
           font-size: 40px;
         }
         span{
-          font-family: 'SamsungOne 400';
+          // font-family: 'SamsungOne 400';
+          font-family: 'Lato', sans-serif;
           font-size: 30px;
           font-weight: normal;
           font-stretch: normal;
@@ -1042,7 +1100,8 @@ body{
         }
       }
       h5{
-        font-family: 'SamsungOne 800';
+        // font-family: 'SamsungOne 800';
+        font-family: 'Lato', sans-serif;
         font-size: 30px;
         font-weight: 800;
         font-stretch: normal;
@@ -1075,7 +1134,8 @@ body{
         margin:0;
       }
       h5{
-        font-family: 'SamsungOne 800';
+        // font-family: 'SamsungOne 800';
+        font-family: 'Lato', sans-serif;
         font-size: 30px;
         font-weight: 800;
         font-stretch: normal;
@@ -1146,17 +1206,18 @@ body{
         margin-top:20px;
       }
       p{
-        font-family: 'SamsungOne 400';
-        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20.5px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: left;
+        text-align: justify;
         color: #000000;
+
         @include respond-to($iphone_xs) {
-          font-size: 20px;
+          font-size: 14px;
         }
 
       }

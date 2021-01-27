@@ -49,5 +49,3 @@ gulp.task("build", ['compileSass', 'concatIndex'], function() {
 
 
 gulp.task("default", ["watch"]);
-
-// /public/static/RDF/site/content/landing/samsung-2018
